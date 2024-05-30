@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VITALCARE | SIGNUP</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <!-- divs for background shapes(circle) -->
+    <body>
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <!-- nav bar -->
+        <div class="main-nav">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="" class="logo-img" />
+                VitalCare
+            </div>
+            <div class="nav"><a href="#"></a></div>
+            <div class="nav"><a href="#"></a></div>
+            <div class="nav"><a href="#"></a></div>
+            <div class="nav"><a href="index.html">Login</a></div>
+        </div>
+
+        <form class="login-form">
+            <h3 class="sign-in-up">Register</h3>
+
+            <label for="email">Email</label>
+            <input
+                type="text"
+                placeholder="Enter email address e.g admin@gmail.com"
+                id="email-el"
+                required
+            />
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                placeholder="Enter a strong Password"
+                id="password-el"
+                required
+            />
+
+            <button id="create-account-el">Create Account</button>
+        </form>
+
+        <script src="signup.js" type="module" defer></script>
+    </body>
+</html>

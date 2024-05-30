@@ -1,0 +1,350 @@
+/* default all elements with no padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nav-bar styles */
+.main-nav {
+    color: #0f7a73;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #dedde5;
+    box-shadow: 0 0 20px rgb(227, 225, 240); /* shawdow reflect bottom - nav bar*/
+}
+
+.main-nav .logo {
+    padding-left: 5px;
+}
+.main-nav .nav {
+    margin-right: 5px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: #0f7a73;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main-nav .nav:hover {
+    padding: 8px 25px;
+    transition: 0.3s;
+}
+.main-nav .nav a {
+    text-decoration: none;
+    color: #fff;
+}
+.logo-img {
+    display: inline;
+    width: 70px;
+    height: 40px;
+}
+
+/* whole page styles */
+body {
+    background-color: #080710;
+    font-family: "Poppins", sans-serif;
+}
+
+/* login form styles */
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    margin-top: 50px;
+}
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* first inner circle */
+.shape:first-child {
+    background: linear-gradient(#0f7a73, #eef2f5);
+    left: -80px;
+    top: -60px;
+}
+/* second inner circle */
+
+.shape:last-child {
+    background: linear-gradient(to left, #f2eded, #0f7a73);
+    right: -30px;
+    bottom: -10px;
+}
+
+.login-form {
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+.login-form *,
+.patient-info-form * {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.login-form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder {
+    color: #e5e5e5;
+}
+
+button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #0f7a73;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    padding: 15px 0;
+    transition: 0.3s;
+}
+
+.forget-password {
+    float: right;
+    margin-top: 10px;
+}
+.forget-password a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* registration section */
+.registration-section1 {
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+    background-color: #0f7a73;
+    padding: 60px 10px;
+    color: #fff;
+}
+
+.registration-section1 p {
+    font-size: larger;
+    padding-top: 100px;
+}
+
+h2,
+h1,
+p {
+    color: #fff;
+    padding: 15px 10px;
+}
+
+::placeholder {
+    color: rgb(116, 113, 113);
+}
+
+/* upload img */
+input[type="file"] {
+    color: #fff;
+    background-color: rgba(222, 222, 222, 0.16);
+}
+
+#upload-btn {
+    width: 100px;
+}
+
+/* gender dropdown styles */
+select {
+    color: black;
+    background-color: #0f7a73;
+    border: 1px solid #0f7a73;
+    border-radius: 10px;
+}
+select option {
+    color: #fff;
+    background-color: #000;
+}
+
+#cancel-btn {
+    border: 1px solid #0f7a73;
+    background-color: transparent;
+    margin-right: 10px;
+    width: 500px;
+}
+#cancel-btn:hover {
+    background-color: #0f7a73;
+}
+
+.trigger-btns {
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* home/overview */
+
+#container1 {
+    margin: 20px 20px;
+}
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.section1 a {
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.section1 a div {
+    margin-right: 5px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    background-color: #0f7a73;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section1 a .run-a-test:hover {
+    margin-right: 5px;
+    padding-left: 100px;
+    transition: 0.3s;
+}
+.section1 a .patient:hover {
+    margin-right: 5px;
+    padding-right: 100px;
+    transition: 0.3s;
+}
+/* .section1-content {
+    margin-top: 10px;
+} */
+
+.div-data {
+    background-color: #0f7a73;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.h2-data {
+    padding-top: 0px;
+}
+.h2-data1 {
+    color: rgb(175, 175, 225);
+}
+.h2-data2 {
+    color: rgb(221, 149, 149);
+}
+h3 {
+    color: #fff;
+    border-bottom: 1px solid #0f7a73;
+    width: 150px;
+    margin: 30px 0;
+    margin-left: 20px;
+}
+
+.sign-in-up {
+    width: auto;
+}
+
+.sign-in-up a {
+    text-decoration: none;
+}
+/* .quick-links {
+    display: flex;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: start;
+    
+}
+.quick-link-div {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+.quick-link1{
+    background-color: #0f7a73;
+}
+.quick-link2{
+    background-color: red;
+}
+.quick-link3{
+    background-color: blue;
+}
+.quick-link4{
+    background-color: grey;
+}
+.quick-link4 p {
+    padding-left: 0;
+}
+.quick-link-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 14px;
+}
+
+table {
+    color: #fff;
+    width: 95%;
+    margin-left: 20px;
+    /* width: auto;
+    box-sizing: border-box; */
+/* }*/
+.table-image {
+    display: flex;
+    justify-content: space-between;
+}
+table tr td {
+    padding: 20px;
+    text-align: center;
+    color: #e5e5e5;
+}
+table tr td a {
+    color: rgb(212, 205, 205);
+}

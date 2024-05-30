@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Patient Profile</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <!-- Firebase SDK -->
+        <script
+            type="module"
+            defer
+            src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"
+        ></script>
+        <script
+            type="module"
+            defer
+            src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"
+        ></script>
+        <script src="profile.js" type="module" defer></script>
+        <link rel="stylesheet" href="style.css" />
+
+        <style>
+            /* Additional CSS for table styling */
+            .patient-table {
+                font-size: small;
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            .patient-table th,
+            .patient-table td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .patient-table th {
+                background-color: #f2f2f2;
+                color: #333;
+                font-weight: 500;
+            }
+
+            .patient-table tr:hover {
+                background-color: #5c5a5a;
+            }
+
+            .patient-table img {
+                max-width: 50px;
+                height: auto;
+                border-radius: 50%;
+            }
+
+            button {
+                border: none;
+                width: 200px;
+                margin-left: 40%;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body style="padding-left: 30px; padding-right: 30px">
+        <div class="main-nav">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="" class="logo-img" />
+                VitalCare
+            </div>
+            <div class="nav">
+                <a href="dashboard.html">Back to Dashboard</a>
+            </div>
+        </div>
+        <br />
+        <br />
+        <h2>Patient Bio</h2>
+        <div id="patient-profile">
+            <!-- Patient profile information will be dynamically injected here -->
+        </div>
+
+        <a href="http://192.168.0.148/"
+            ><button id="run-test-now">Run a Test Now</button></a
+        >
+
+        <h3>Test Results</h3>
+
+        <div id="data_display" style="color: #000">
+            <table id="data_table" class="patient-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Patient ID</th>
+                        <th>Reading ID</th>
+                        <th>Temperature</th>
+                        <th>Pulse</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="data_table_body">
+                    <!-- Data will be appended here -->
+                </tbody>
+            </table>
+        </div>
+    </body>
+
+    <!-- script for profileTest -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="profileTest.js"></script>
+</html>

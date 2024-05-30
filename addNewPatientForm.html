@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>VITALCARE | REGISTRATION</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body style="padding-left: 20px; padding-right: 20px">
+        <div class="main-nav">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="" class="logo-img" />
+                VitalCare
+            </div>
+            <div class="nav">
+                <a href="dashboard.html">Back to Home</a>
+            </div>
+        </div>
+
+        <div class="registration-section1">
+            <p>Add New patient</p>
+        </div>
+
+        <h2>Patient's Information</h2>
+        <p>NOTICE: Kindly fill all details correctly.</p>
+        <br />
+        <br />
+        <form class="patient-info-form" id="patient-info">
+            <p>Upload your Image :</p>
+            <input type="file" name="image" id="image-el" required />
+
+            <label for="firstname">First Name :</label>
+            <input
+                type="text"
+                placeholder="Enter patient's first name e.g Richard"
+                id="firstname-el"
+                required
+            />
+
+            <label for="lastname">Last Name : </label>
+            <input
+                type="text"
+                placeholder="Enter patient's last name e.g Cooper"
+                id="lastname-el"
+                required
+            />
+
+            <label for="email">Email Address : </label>
+            <input
+                type="email"
+                placeholder="Enter patient's email address e.g richardcooper@gmail.com"
+                id="email-el"
+                required
+            />
+
+            <label for="address">Address :</label>
+            <input
+                type="text"
+                placeholder="Enter patient's home address"
+                id="address-el"
+                required
+            />
+
+            <label for="gender">Gender :</label>
+            <select name="gender" id="gender-el" required>
+                <option value="null">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="phoneNo">Phone number :</label>
+            <input
+                type="text"
+                placeholder="Enter patient's phone number"
+                id="phone-no-el"
+                required
+            />
+
+            <label for="date">Date Registered :</label>
+            <input
+                type="text"
+                placeholder="e.g 01-05-2024"
+                name="date"
+                id="date-el"
+                required
+            />
+            <div class="trigger-btns">
+                <button id="cancel-btn">Cancel</button>
+                <button type="submit" id="save-patient-info-btn">Upload</button>
+            </div>
+        </form>
+
+        <!-- Firebase SDK -->
+        <script
+            type="module"
+            defer
+            src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"
+        ></script>
+        <script
+            type="module"
+            defer
+            src="https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js"
+        ></script>
+        <script
+            type="module"
+            defer
+            src="https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js"
+        ></script>
+        <script src="addNewPatientForm.js" type="module" defer></script>
+    </body>
+</html>

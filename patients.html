@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VITALCARE | Patient List</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            /* Additional CSS for table styling */
+            .patient-table {
+                font-size: small;
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            .patient-table th,
+            .patient-table td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .patient-table th {
+                background-color: #f2f2f2;
+                color: #333;
+                font-weight: 500;
+            }
+
+            .patient-table tr:hover {
+                background-color: #5c5a5a;
+            }
+
+            .patient-table img {
+                max-width: 50px;
+                height: auto;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-nav">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="" class="logo-img" />
+                VitalCare
+            </div>
+            <div class="nav">
+                <a href="dashboard.html">Back to Home</a>
+            </div>
+        </div>
+        <br />
+        <br />
+        <h2>Registered Patient List</h2>
+        <div class="patient-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Gender</th>
+                        <th>Phone</th>
+                        <th>Date</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody id="patient-data">
+                    <!-- Patient data is dynamically injected here from "patients.js" -->
+                </tbody>
+            </table>
+        </div>
+
+        <script src="patients.js" type="module" defer></script>
+    </body>
+</html>
